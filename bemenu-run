@@ -1,0 +1,19 @@
+#!/bin/sh
+exec /home/whit/.nix-profile/bin/bemenu-run \
+  --list 12 \
+  --center \
+  --fn "IBM Plex Mono 10" \
+  --tb "#2b2b2b" \
+  --tf "#c8c8c8" \
+  --fb "#2b2b2b" \
+  --ff "#909090" \
+  --nb "#2b2b2b" \
+  --nf "#c8c8c8" \
+  --ab "#2b2b2b" \
+  --af "#c8c8c8" \
+  --hb "#4a4a4a" \
+  --hf "#ffffff" \
+  --border 0 \
+  --border-radius 0 \
+  --line-height 24 \
+  --width-factor 0.35

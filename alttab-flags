@@ -1,0 +1,21 @@
+#!/bin/sh
+
+exec alttab \
+  -vertical \
+  -w 1 \
+  -ns \
+  -d 0 \
+  -bg '#2b2b2b' \
+  -fg '#d6d6d6' \
+  -frame '#5a5a5a' \
+  -inact '#3a3a3a' \
+  -min '#2f2f2f' \
+  -bc '#555555' \
+  -bw 2 \
+  -font 'xft:IBM Plex Mono:size=11' \
+  -theme Papirus-Dark \
+  -vp focus \
+  -p center \
+  -i 40x40 \
+  -t 250x400 \
+  -s 4

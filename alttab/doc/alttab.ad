@@ -1,0 +1,100 @@
+! This is example configuration file for alttab.
+! Copy it to /etc/X11/Xresources/alttab or merge with ~/.Xresources
+! and uncomment/edit statements according to man alttab(1).
+! To reload the configuration, issue: xrdb -merge < this_file
+! and then restart alttab.
+! Please note: alttab doesn't load resources from app-defaults or .Xdefaults
+! but only from properties on the root window (handled by xrdb).
+
+!
+! Force using raw X11 interface
+!alttab.windowmanager:   0
+
+! Show windows belonging to all desktops
+!alttab.desktops:        1
+
+! Include only windows belonging to current screen
+!alttab.screens:         0
+
+! Ctrl-Tab instead of Alt-Tab
+!alttab.modifier.keysym: Control_L
+
+! Ctrl instead of Shift for backscroll
+!alttab.backscroll.keysym: Control_L
+
+! grave (back apostrophe) instead of Tab
+!alttab.key.keysym:      grave
+
+! auxiliary 'previous' key
+!alttab.prevkey.keysym:      Left
+! auxiliary 'next' key
+!alttab.nextkey.keysym:      Right
+
+! auxiliary 'cancel' key
+!alttab.cancelkey.keysym:    Escape
+
+! auxiliary 'kill' key
+!alttab.killkey.keysym:      k
+
+! Limit the switcher to this rectangle 
+! instead of default screen size
+!alttab.viewport:        1280x1024+1280+0
+! Or to the monitor with mouse pointer
+!alttab.viewport:        pointer
+
+! Try to not interfere with WM's window positioning
+!alttab.position:        none
+! Or specify the switcher position explicitly
+!alttab.position:        +100+100
+
+! Big tiles
+alttab.tile.geometry:   260x300
+
+! Bigger icons
+alttab.icon.geometry:   48x48
+
+! Use icons from X11 window attributes only (no disk operations)
+!alttab.icon.source:     0
+
+! Non-standard theme for icons. Warning: any theme other than 'hicolor' 
+! probably has low number of apps icons.
+!alttab.theme:           Tango
+
+! Grey bg
+alttab.background:      #c9c9c9
+
+! Red letters
+alttab.foreground:      #600000
+
+! Thin frame around selected tile
+!alttab.framewidth:      4
+
+! Random dark frame around selected tile
+alttab.framecolor:      _rnd_low
+
+! Gray42 frame around deselected tiles
+!alttab.inactcolor:      #6b6b6b
+
+! Light gray frame for minimized windows
+!alttab.mincolor:        #dadada
+
+! Show X11 window border around the switcher
+!alttab.borderwidth:     4
+
+! Blue border
+!alttab.bordercolor:     #0000FF
+
+! Bigger font
+!alttab.font:           xft:DejaVu Sans Condensed-18
+
+! Vertical layout
+!alttab.vertical:       true
+
+! Keep switcher after Alt-Tab release
+!alttab.keep:           true
+
+! Force showing desktop name at the bottom of each tile
+!alttab.bottomline:     1
+
+! Ignore _NET_WM_STATE_SKIP_TASKBAR
+!alttab.noskiptaskbar:  true
